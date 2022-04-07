@@ -32,12 +32,12 @@ class ViewController: UIViewController {
         redSlider.minimumTrackTintColor = .red
         greenSlider.minimumTrackTintColor = .green
         blueSlider.minimumTrackTintColor = .blue
-        viewField.backgroundColor = UIColor(red: 128/255, green: 128/255, blue: 128/255, alpha: 1.0)
+        viewField.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1.0)
     }
     private func range(slider: UISlider){
         slider.minimumValue = 1
         slider.maximumValue = 255
-        slider.value = 128
+        slider.value = 255
     }
     
     @IBAction func redSliderAction() {
