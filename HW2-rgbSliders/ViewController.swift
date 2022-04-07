@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol ViewControllerDelegate: AnyObject{
+    func backgroundColor(color: UIColor)
+}
+
 class ViewController: UIViewController {
     @IBOutlet weak var viewField: UIView!
     @IBOutlet weak var redLabel: UILabel!
@@ -15,6 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var redSlider: UISlider!
     @IBOutlet weak var greenSlider: UISlider!
     @IBOutlet weak var blueSlider: UISlider!
+    weak var delegate: ViewControllerDelegate?
     override func viewDidLoad() {
         super.viewDidLoad()
         viewField.layer.cornerRadius = 20
@@ -44,10 +49,16 @@ class ViewController: UIViewController {
     @IBAction func blueSliderAction() {
         blueLabel.text = String(Int(blueSlider.value))
     }
-    private func backColor(){
+    func backColor() -> UIColor{
         viewField.backgroundColor = UIColor(red: CGFloat(redSlider.value)/255, green: CGFloat(greenSlider.value)/255, blue: CGFloat(blueSlider.value)/255, alpha: 1.0)
+    let needColor = UIColor(red: CGFloat(redSlider.value)/255, green: CGFloat(greenSlider.value)/255, blue: CGFloat(blueSlider.value)/255, alpha: 1.0)
+    return needColor
     }
     
+    @IBAction func DoneButtonPressed() {
+        delegate?.backgroundColor(color: backColor())
+        dismiss(animated: true)
+    }
     @IBAction func rgbSliders() {
         backColor()
     }

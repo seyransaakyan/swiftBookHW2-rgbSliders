@@ -13,6 +13,7 @@
 		150ADE5F27F64FC5007E7446 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 150ADE5D27F64FC5007E7446 /* Main.storyboard */; };
 		150ADE6127F64FCE007E7446 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 150ADE6027F64FCE007E7446 /* Assets.xcassets */; };
 		150ADE6427F64FCE007E7446 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 150ADE6227F64FCE007E7446 /* LaunchScreen.storyboard */; };
+		1527E37827FE5B34008B38C6 /* NewColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1527E37727FE5B34008B38C6 /* NewColorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		150ADE6027F64FCE007E7446 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		150ADE6327F64FCE007E7446 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		150ADE6527F64FCE007E7446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1527E37727FE5B34008B38C6 /* NewColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewColorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				150ADE6027F64FCE007E7446 /* Assets.xcassets */,
 				150ADE6227F64FCE007E7446 /* LaunchScreen.storyboard */,
 				150ADE6527F64FCE007E7446 /* Info.plist */,
+				1527E37727FE5B34008B38C6 /* NewColorViewController.swift */,
 			);
 			path = "HW2-rgbSliders";
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 				150ADE5C27F64FC5007E7446 /* ViewController.swift in Sources */,
 				150ADE5827F64FC5007E7446 /* AppDelegate.swift in Sources */,
 				150ADE5A27F64FC5007E7446 /* SceneDelegate.swift in Sources */,
+				1527E37827FE5B34008B38C6 /* NewColorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
